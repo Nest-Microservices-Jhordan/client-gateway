@@ -31,7 +31,7 @@ export class ProductsController {
 
   @Get()
   getAllProducts(@Query() paginationDto: PaginationDto) {
-    return this.client.send({ cmd: 'find_all' }, paginationDto);
+    return this.client.send({ cmd: 'find_all_products' }, paginationDto);
   }
 
   @Get(':id')

@@ -10,3 +10,7 @@ docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
 5. Run microservices to use
 6. Run `npm run start:dev`
 
+
+## PROD
+
+Run `docker build -f dockerfile.prod -t client-gateway`
