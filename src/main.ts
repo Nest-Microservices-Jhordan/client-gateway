@@ -18,6 +18,8 @@ async function bootstrap() {
   );
   app.useGlobalFilters(new RpcCustomExceptionFilter());
 
+  console.log('Triggering workflow');
+
   await app.listen(envs.port);
 
   logger.log(`Gateway Client running on port ${envs.port}`);
